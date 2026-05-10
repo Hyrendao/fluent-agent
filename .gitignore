@@ -17,6 +17,9 @@ data/*.db
 .vscode/
 *.swp
 
+# Environment
+.env
+
 # OS
 Thumbs.db
 .DS_Store

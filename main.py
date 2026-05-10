@@ -1,5 +1,10 @@
 """Fluent-Agent —— 外语学习助手入口."""
 
+from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv(Path(__file__).resolve().parent / ".env")
+
 from app.database import init_db, add_word, get_all_words, update_mastery, delete_word, search_words
 from app.translate_tool import run_translate_flow
 
